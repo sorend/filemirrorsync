@@ -1,0 +1,12 @@
+
+FileMirrorSync Changes
+----------------------
+
+2015-02-27 chdh
+- License changed from GPL to LGPL+EPL.
+
+2011-04-02 chdh
+- Changes for JDK7 Developer Preview Release (b136)
+
+2010-11-21 chdh (Christian d'Heureuse)
+- Initial release.

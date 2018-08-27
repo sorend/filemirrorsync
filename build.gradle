@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+
+def git_commit = "git rev-parse --short HEAD".execute().text.trim()
+
+group = 'filemirrorsync'
+version = "1.0-${git_commit}"
+
+description = """File Mirror Sync"""
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+repositories {
+     jcenter()
+}
+
+publishing {
+    publications {
+        dist(MavenPublication) {
+            from components.java
+        }
+    }
+}
